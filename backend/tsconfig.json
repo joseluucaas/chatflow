@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+
+    // Versão do JavaScript gerado
+    "target": "ES2022",
+
+    // Usa o sistema moderno de módulos do Node
+    // Compatível com import/export
+    "module": "NodeNext",
+
+    // Resolve imports seguindo as regras do Node moderno
+    "moduleResolution": "NodeNext",
+
+    // Pasta dos arquivos TypeScript
+    "rootDir": "./src",
+
+    // Pasta dos arquivos compilados
+    "outDir": "./dist",
+
+    // Ativa checagem rigorosa de tipos
+    "strict": true,
+
+    // Permite:
+    // import express from "express"
+    "esModuleInterop": true,
+
+    // Ignora erros de tipagem das bibliotecas externas
+    "skipLibCheck": true,
+
+    // Permite importar arquivos JSON
+    "resolveJsonModule": true,
+
+    // Garante que nomes de arquivos sejam consistentes
+    "forceConsistentCasingInFileNames": true,
+
+    // Gera mapas para debug
+    "sourceMap": true
+  },
+
+  "include": [
+    "src/**/*.ts"
+  ],
+
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
