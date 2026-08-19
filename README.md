@@ -36,74 +36,52 @@ O objetivo principal deste projeto não é apenas criar um chat funcional, mas c
 
 Durante o desenvolvimento do ChatFlow serão aplicados conceitos e práticas utilizadas no desenvolvimento de sistemas profissionais:
 
-- **Arquitetura em camadas**
-  - Separação de responsabilidades entre Controllers, Services, Repositories e Entities.
+- **Arquitetura em camadas** — Separação de responsabilidades entre Controllers, Services, Repositories e Entities.
 
-- **Programação Orientada a Objetos (POO)**
-  - Uso de classes, objetos, encapsulamento, abstração, herança e polimorfismo para organização do domínio da aplicação.
+- **Programação Orientada a Objetos (POO)** — Uso de classes, objetos, encapsulamento, abstração, herança e polimorfismo para organização do domínio da aplicação.
 
-- **Princípios SOLID**
-  - Aplicação dos cinco princípios para criar um código mais flexível, testável e de fácil manutenção.
+- **Princípios SOLID** — Aplicação dos cinco princípios para criar um código mais flexível, testável e de fácil manutenção.
 
-- **Clean Code**
-  - Desenvolvimento com foco em legibilidade, simplicidade e clareza.
+- **Clean Code** — Desenvolvimento com foco em legibilidade, simplicidade e clareza.
 
-- **Clean Architecture**
-  - Organização do sistema visando baixo acoplamento e independência das regras de negócio.
+- **Clean Architecture** — Organização do sistema visando baixo acoplamento e independência das regras de negócio.
 
-- **Design Patterns**
-  - Utilização de padrões de projeto para resolver problemas comuns de arquitetura e desenvolvimento.
+- **Design Patterns** — Utilização de padrões de projeto para resolver problemas comuns de arquitetura e desenvolvimento.
 
-- **Domain-Driven Design (DDD)**
-  - Modelagem do sistema baseada nas regras e conceitos do domínio da aplicação.
+- **Domain-Driven Design (DDD)** — Modelagem do sistema baseada nas regras e conceitos do domínio da aplicação.
 
-- **Dependency Injection (DI)**
-  - Gerenciamento de dependências para reduzir acoplamento entre componentes.
+- **Dependency Injection (DI)** — Gerenciamento de dependências para reduzir acoplamento entre componentes.
 
-- **Repository Pattern**
-  - Abstração do acesso aos dados, isolando regras de negócio da camada de persistência.
+- **Repository Pattern** — Abstração do acesso aos dados, isolando regras de negócio da camada de persistência.
 
-- **Service Layer Pattern**
-  - Centralização das regras de negócio em serviços independentes.
+- **Service Layer Pattern** — Centralização das regras de negócio em serviços independentes.
 
-- **DTO (Data Transfer Object)**
-  - Controle e organização dos dados que trafegam entre as camadas da aplicação.
+- **DTO (Data Transfer Object)** — Controle e organização dos dados que trafegam entre as camadas da aplicação.
 
-- **Validação de dados**
-  - Garantia de integridade das informações recebidas pela API.
+- **Validação de dados** — Garantia de integridade das informações recebidas pela API.
 
-- **Tratamento global de erros**
-  - Padronização das respostas de erro e melhor experiência para consumidores da API.
+- **Tratamento global de erros** — Padronização das respostas de erro e melhor experiência para consumidores da API.
 
-- **Autenticação e autorização**
-  - Implementação de mecanismos seguros para controle de acesso.
+- **Autenticação e autorização** — Implementação de mecanismos seguros para controle de acesso.
 
-- **Segurança da aplicação**
-  - Aplicação de boas práticas contra vulnerabilidades comuns.
+- **Segurança da aplicação** — Aplicação de boas práticas contra vulnerabilidades comuns.
 
 - **Testes automatizados**
   - Criação de testes unitários e testes de integração para garantir confiabilidade.
 
-- **Versionamento de código**
-  - Uso de Git seguindo boas práticas de organização e histórico de alterações.
+- **Versionamento de código** — Uso de Git seguindo boas práticas de organização e histórico de alterações.
 
-- **Documentação de software**
-  - Criação de documentação técnica utilizando README e Swagger.
+- **Documentação de software** — Criação de documentação técnica utilizando README e Swagger.
 
-- **Código limpo e sustentável**
-  - Desenvolvimento pensando em manutenção, evolução e escalabilidade.
+- **Código limpo e sustentável** — Desenvolvimento pensando em manutenção, evolução e escalabilidade.
 
-- **Escalabilidade**
-  - Preparação da aplicação para suportar crescimento de usuários e volume de dados.
+- **Escalabilidade** — Preparação da aplicação para suportar crescimento de usuários e volume de dados.
 
-- **Observabilidade**
-  - Planejamento de logs, monitoramento e rastreamento de erros.
+- **Observabilidade** — Planejamento de logs, monitoramento e rastreamento de erros.
 
-- **Performance**
-  - Aplicação de técnicas para otimização de consultas, cache e processamento.
+- **Performance** — Aplicação de técnicas para otimização de consultas, cache e processamento.
 
-- **Desenvolvimento orientado a boas práticas**
-  - Construção do sistema seguindo padrões utilizados no mercado.
+- **Desenvolvimento orientado a boas práticas** — Construção do sistema seguindo padrões utilizados no mercado.
 
 ## 🛠 Stack utilizada
 
