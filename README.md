@@ -108,9 +108,9 @@ Durante o desenvolvimento do ChatFlow serão aplicados conceitos e práticas uti
 - **Desenvolvimento orientado a boas práticas**
   - Construção do sistema seguindo padrões utilizados no mercado.
 
-# 🛠 Stack utilizada
+## 🛠 Stack utilizada
 
-## Back-end
+**Back-end**
 
 - [Node.js](https://nodejs.org/) — Ambiente de execução JavaScript no servidor.
 
@@ -138,7 +138,7 @@ Durante o desenvolvimento do ChatFlow serão aplicados conceitos e práticas uti
 
 ---
 
-## Front-end *(planejado)*
+**Front-end** *(planejado)*
 
 - [React](https://react.dev/) — Biblioteca utilizada para construção da interface da aplicação.
 
