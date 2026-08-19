@@ -94,7 +94,7 @@ Client["Cliente"] --> Routes["Routes"]
 Routes --> Middleware["Middlewares"]
 Middleware --> Controller["Controllers"]
 Controller --> Service["Services"]
-Service --> Repository["Repositories"]
+Service --> Entity["Entities"] --> Repository["Repositories"]
 Repository --> Database[("MySQL")]
 ```
 
@@ -103,6 +103,7 @@ Repository --> Database[("MySQL")]
 | **Routes** | Define os endpoints (`POST /login`, `GET /messages`) |
 | **Controllers** | Recebe requisições, chama serviços e retorna respostas |
 | **Services** | Regras de negócio (validações, permissões, processamento) |
+| **Entities** | Representa os objetos de domínio da aplicação (`User`, `Message`, `Conversation`), encapsulando dados e regras próprias de cada entidade |
 | **Repositories** | Acesso aos dados (salvar mensagem, buscar usuário, consultar conversas) |
 
 ---
@@ -176,6 +177,10 @@ backend
     ├── modules
     │   ├── auth
     │   ├── users
+    │   │   ├── entities
+    │   │   ├── controllers
+    │   │   ├── services
+    │   │   └── repositories
     │   ├── conversations
     │   └── messages
     ├── shared
