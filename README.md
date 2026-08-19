@@ -32,7 +32,7 @@ Aplicação de comunicação em tempo real desenvolvida com foco em **Engenharia
 
 ## 🎯 Objetivo do projeto
 
-O ChatFlow tem como objetivo desenvolver uma aplicação backend completa aplicando conceitos utilizados no mercado.
+O ChatFlow tem como objetivo desenvolver uma aplicação **Full Stack** completa aplicando conceitos utilizados no mercado.
 
 Durante o desenvolvimento serão explorados:
 
