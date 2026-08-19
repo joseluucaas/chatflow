@@ -33,104 +33,179 @@ O **ChatFlow** é uma aplicação de conversação em tempo real onde usuários 
 
 O objetivo principal deste projeto não é apenas criar um chat funcional, mas construir uma aplicação seguindo padrões utilizados no mercado de desenvolvimento backend.
 
-Durante o desenvolvimento serão aplicados:
+## 🧠 Conceitos aplicados
 
-- Arquitetura em camadas;
-- Programação Orientada a Objetos;
-- Princípios SOLID;
-- Clean Code;
-- Testes automatizados;
-- Segurança;
-- Boas práticas de desenvolvimento.
+Durante o desenvolvimento do ChatFlow serão aplicados conceitos e práticas utilizadas no desenvolvimento de sistemas profissionais:
 
----
+- **Arquitetura em camadas**
+  - Separação de responsabilidades entre Controllers, Services, Repositories e Entities.
 
-# 🎯 Objetivos do projeto
+- **Programação Orientada a Objetos (POO)**
+  - Uso de classes, objetos, encapsulamento, abstração, herança e polimorfismo para organização do domínio da aplicação.
 
-Este projeto tem como objetivo aprofundar conhecimentos em desenvolvimento backend profissional.
+- **Princípios SOLID**
+  - Aplicação dos cinco princípios para criar um código mais flexível, testável e de fácil manutenção.
 
-## Progresso geral
+- **Clean Code**
+  - Desenvolvimento com foco em legibilidade, simplicidade e clareza.
 
-- [x] Criar projeto inicial
-- [x] Configurar Node.js
-- [x] Configurar TypeScript
-- [x] Configurar Express
-- [x] Configurar Git
-- [x] Configurar ESLint
-- [x] Configurar Prettier
+- **Clean Architecture**
+  - Organização do sistema visando baixo acoplamento e independência das regras de negócio.
 
-- [ ] Criar arquitetura de módulos
-- [ ] Implementar Programação Orientada a Objetos
-- [ ] Aplicar SOLID
-- [ ] Configurar MySQL
-- [ ] Criar autenticação
-- [ ] Criar comunicação em tempo real
-- [ ] Implementar WebSocket
-- [ ] Implementar Redis
-- [ ] Criar testes
-- [ ] Criar documentação Swagger
-- [ ] Criar ambiente Docker
+- **Design Patterns**
+  - Utilização de padrões de projeto para resolver problemas comuns de arquitetura e desenvolvimento.
 
----
+- **Domain-Driven Design (DDD)**
+  - Modelagem do sistema baseada nas regras e conceitos do domínio da aplicação.
+
+- **Dependency Injection (DI)**
+  - Gerenciamento de dependências para reduzir acoplamento entre componentes.
+
+- **Repository Pattern**
+  - Abstração do acesso aos dados, isolando regras de negócio da camada de persistência.
+
+- **Service Layer Pattern**
+  - Centralização das regras de negócio em serviços independentes.
+
+- **DTO (Data Transfer Object)**
+  - Controle e organização dos dados que trafegam entre as camadas da aplicação.
+
+- **Validação de dados**
+  - Garantia de integridade das informações recebidas pela API.
+
+- **Tratamento global de erros**
+  - Padronização das respostas de erro e melhor experiência para consumidores da API.
+
+- **Autenticação e autorização**
+  - Implementação de mecanismos seguros para controle de acesso.
+
+- **Segurança da aplicação**
+  - Aplicação de boas práticas contra vulnerabilidades comuns.
+
+- **Testes automatizados**
+  - Criação de testes unitários e testes de integração para garantir confiabilidade.
+
+- **Versionamento de código**
+  - Uso de Git seguindo boas práticas de organização e histórico de alterações.
+
+- **Documentação de software**
+  - Criação de documentação técnica utilizando README e Swagger.
+
+- **Código limpo e sustentável**
+  - Desenvolvimento pensando em manutenção, evolução e escalabilidade.
+
+- **Escalabilidade**
+  - Preparação da aplicação para suportar crescimento de usuários e volume de dados.
+
+- **Observabilidade**
+  - Planejamento de logs, monitoramento e rastreamento de erros.
+
+- **Performance**
+  - Aplicação de técnicas para otimização de consultas, cache e processamento.
+
+- **Desenvolvimento orientado a boas práticas**
+  - Construção do sistema seguindo padrões utilizados no mercado.
 
 # 🛠 Stack utilizada
 
 ## Back-end
 
-- **Node.js**
-  - Ambiente de execução JavaScript.
+- [Node.js](https://nodejs.org/)  
+  - Ambiente de execução JavaScript no servidor.
 
-- **TypeScript**
-  - Tipagem estática e maior segurança no desenvolvimento.
+- [TypeScript](https://www.typescriptlang.org/)  
+  - Superset do JavaScript com tipagem estática, proporcionando maior segurança e organização do código.
 
-- **Express 4**
-  - Framework utilizado para criação da API HTTP.
+- [Express 4](https://expressjs.com/)  
+  - Framework utilizado para construção da API HTTP e gerenciamento das rotas da aplicação.
 
-- **MySQL**
-  - Banco de dados relacional.
+- [MySQL](https://www.mysql.com/)  
+  - Banco de dados relacional utilizado para armazenamento das informações da aplicação.
 
-- **ORM**
-  - Camada responsável pela comunicação entre aplicação e banco.
+- [ORM](https://www.prisma.io/)  
+  - Camada de abstração para comunicação entre a aplicação e o banco de dados.
 
-- **WebSocket**
-  - Comunicação em tempo real entre clientes.
+- [WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)  
+  - Tecnologia utilizada para comunicação bidirecional em tempo real entre clientes e servidor.
 
-- **Redis**
-  - Cache, gerenciamento de presença e recursos de tempo real.
+- [Redis](https://redis.io/)  
+  - Banco de dados em memória utilizado para cache, gerenciamento de presença dos usuários e recursos de tempo real.
 
-- **JWT**
-  - Autenticação baseada em tokens.
+- [JSON Web Token (JWT)](https://jwt.io/)  
+  - Sistema de autenticação baseado em tokens para controle de acesso.
 
-- **bcrypt**
-  - Hash seguro de senhas.
+- [bcrypt](https://www.npmjs.com/package/bcrypt)  
+  - Biblioteca utilizada para criação de hashes seguros de senha.
 
-- **Zod**
-  - Validação dos dados recebidos.
+- [Zod](https://zod.dev/)  
+  - Biblioteca utilizada para validação e tipagem dos dados recebidos pela aplicação.
 
-- **Docker**
-  - Containerização do ambiente.
+- [Docker](https://www.docker.com/)  
+  - Plataforma utilizada para criação de ambientes isolados e padronização da infraestrutura.
 
-- **Swagger**
-  - Documentação da API.
+- [Swagger](https://swagger.io/)  
+  - Ferramenta utilizada para documentação e testes dos endpoints da API.
+
+---
+
+## Front-end *(planejado)*
+
+- [React](https://react.dev/)  
+  - Biblioteca utilizada para construção da interface da aplicação.
+
+- [TypeScript](https://www.typescriptlang.org/)  
+  - Utilizado também no frontend para garantir maior segurança e organização do código.
+
+- [Tailwind CSS](https://tailwindcss.com/)  
+  - Framework CSS utilizado para criação da interface de forma rápida e responsiva.
+
+- [Vite](https://vite.dev/)  
+  - Ferramenta utilizada para configuração e execução do ambiente frontend.
 
 ---
 
 ## Qualidade de código
 
-- ESLint
-- Prettier
-- Clean Code
-- SOLID
-- Programação Orientada a Objetos
+- [ESLint](https://eslint.org/)  
+  - Análise estática do código para identificar problemas e manter padrões.
+
+- [Prettier](https://prettier.io/)  
+  - Formatação automática do código seguindo um padrão definido.
+
+- **Clean Code**
+  - Práticas para criação de código legível, simples e sustentável.
+
+- **SOLID**
+  - Princípios de engenharia de software para criar código flexível e de fácil manutenção.
+
+- **Programação Orientada a Objetos (POO)**
+  - Paradigma utilizado para organização das entidades e regras do domínio.
+
+- **Clean Architecture**
+  - Organização estrutural visando baixo acoplamento e separação de responsabilidades.
 
 ---
 
-## Testes
+## Testes automatizados
 
-- Jest
-- Supertest
+- [Jest](https://jestjs.io/)  
+  - Framework utilizado para criação de testes automatizados.
+
+- [Supertest](https://www.npmjs.com/package/supertest)  
+  - Biblioteca utilizada para testar endpoints HTTP da API.
 
 ---
+
+## Ferramentas de desenvolvimento
+
+- [Git](https://git-scm.com/)  
+  - Controle de versão do projeto.
+
+- [GitHub](https://github.com/)  
+  - Hospedagem do repositório e gerenciamento do código.
+
+- [VS Code](https://code.visualstudio.com/)  
+  - Editor utilizado no desenvolvimento.
 
 # 🏗 Arquitetura
 
@@ -499,6 +574,157 @@ Para criar um código:
 - escalável;
 - testável;
 - fácil de manter.
+
+---
+
+## 🗺 Roadmap
+
+O desenvolvimento do ChatFlow será dividido em fases, seguindo uma evolução gradual de uma aplicação backend profissional.
+
+Cada etapa será marcada conforme for concluída.
+
+---
+
+## ✅ Fase 1 — Configuração inicial do projeto
+
+- [x] Criar estrutura inicial do projeto
+- [x] Configurar Node.js
+- [x] Configurar TypeScript
+- [x] Configurar ESM (`type: module`)
+- [x] Configurar Express
+- [x] Configurar ESLint
+- [x] Configurar Prettier
+- [x] Configurar Git e versionamento
+- [x] Criar documentação inicial do projeto (README)
+
+---
+
+## 🏗 Fase 2 — Arquitetura e organização do Backend
+
+- [ ] Criar estrutura de módulos
+- [ ] Implementar arquitetura em camadas
+  - [ ] Controllers
+  - [ ] Services
+  - [ ] Repositories
+  - [ ] Entities
+- [ ] Aplicar Programação Orientada a Objetos
+- [ ] Aplicar princípios SOLID
+- [ ] Criar tratamento global de erros
+- [ ] Criar padrões de respostas da API
+- [ ] Configurar variáveis de ambiente
+
+---
+
+## 🗄 Fase 3 — Banco de dados e persistência
+
+- [ ] Configurar MySQL
+- [ ] Configurar ORM
+- [ ] Criar conexão com banco
+- [ ] Criar migrations
+- [ ] Criar modelagem inicial
+
+### Entidades:
+
+- [ ] User
+- [ ] Conversation
+- [ ] Participant
+- [ ] Message
+
+- [ ] Criar relacionamentos entre entidades
+- [ ] Criar repositories para acesso aos dados
+
+---
+
+## 🔐 Fase 4 — Sistema de autenticação e usuários
+
+- [ ] Criar cadastro de usuários
+- [ ] Implementar hash de senha com bcrypt
+- [ ] Criar login
+- [ ] Implementar autenticação JWT
+- [ ] Criar middleware de autenticação
+- [ ] Criar refresh token
+- [ ] Criar gerenciamento de sessão
+- [ ] Criar perfil de usuário
+
+---
+
+## 💬 Fase 5 — Sistema de conversas
+
+- [ ] Criar criação de conversas
+- [ ] Implementar conversas privadas
+- [ ] Implementar participantes
+- [ ] Listar conversas do usuário
+- [ ] Gerenciar membros da conversa
+
+---
+
+## ⚡ Fase 6 — Comunicação em tempo real
+
+- [ ] Configurar WebSocket
+- [ ] Criar servidor de comunicação em tempo real
+- [ ] Criar eventos de mensagens
+- [ ] Enviar mensagens instantaneamente
+- [ ] Receber mensagens em tempo real
+- [ ] Criar status online/offline
+- [ ] Criar indicador de usuário digitando
+- [ ] Criar notificações em tempo real
+
+---
+
+## 🚀 Fase 7 — Performance e escalabilidade
+
+- [ ] Implementar Redis
+- [ ] Criar sistema de cache
+- [ ] Gerenciar presença dos usuários
+- [ ] Criar filas de processamento
+- [ ] Melhorar performance das consultas
+- [ ] Preparar aplicação para múltiplas instâncias
+
+---
+
+## 🧪 Fase 8 — Testes automatizados
+
+- [ ] Configurar ambiente de testes
+- [ ] Testes unitários
+- [ ] Testes de integração
+- [ ] Testes de autenticação
+- [ ] Testes de mensagens
+- [ ] Testes dos serviços principais
+
+---
+
+## 📚 Fase 9 — Documentação da API
+
+- [ ] Configurar Swagger
+- [ ] Documentar endpoints
+- [ ] Documentar autenticação
+- [ ] Documentar respostas da API
+- [ ] Criar exemplos de requisições
+
+---
+
+## 🐳 Fase 10 — Infraestrutura e Deploy
+
+- [ ] Configurar Docker
+- [ ] Criar Docker Compose
+- [ ] Containerizar aplicação
+- [ ] Configurar banco em produção
+- [ ] Configurar variáveis de ambiente
+- [ ] Deploy do backend
+- [ ] Deploy do frontend
+
+---
+
+## 🎨 Fase 11 — Front-end (futuro)
+
+- [ ] Criar aplicação React
+- [ ] Configurar Tailwind CSS
+- [ ] Criar tela de login
+- [ ] Criar cadastro de usuário
+- [ ] Criar interface de conversas
+- [ ] Integrar API
+- [ ] Integrar WebSocket
+- [ ] Criar notificações visuais
 
 ---
 
