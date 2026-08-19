@@ -20,8 +20,6 @@ Aplicação de comunicação em tempo real desenvolvida como projeto de estudo a
 - [Como executar](#-como-executar-o-projeto)
 - [API Documentation](#-api-documentation)
 - [Roadmap](#-roadmap)
-- [Padrões utilizados](#-padrões-utilizados)
-- [Decisões técnicas](#-decisões-técnicas)
 - [Autor](#-autor)
 
 ---
@@ -448,66 +446,6 @@ Futuramente:
 ```
 /api-docs
 ```
-
----
-
-## 🧠 Padrões utilizados
-
-### SOLID
-
-Aplicação dos cinco princípios:
-
-- Single Responsibility Principle;
-- Open Closed Principle;
-- Liskov Substitution Principle;
-- Interface Segregation Principle;
-- Dependency Inversion Principle.
-
-
-### Clean Code
-
-Práticas utilizadas:
-
-- nomes claros;
-- funções pequenas;
-- responsabilidades bem definidas;
-- baixo acoplamento.
-
----
-
-## 💡 Decisões técnicas
-
-### Por que TypeScript?
-
-Porque aumenta a segurança do código através da tipagem estática.
-
----
-
-### Por que Express?
-
-Porque permite entender profundamente o funcionamento de APIs HTTP.
-
----
-
-### Por que MySQL?
-
-Porque é um banco relacional amplamente utilizado no mercado.
-
----
-
-### Por que Programação Orientada a Objetos?
-
-Para organizar o domínio da aplicação através de objetos e responsabilidades bem definidas.
-
----
-
-### Por que SOLID?
-
-Para criar um código:
-
-- escalável;
-- testável;
-- fácil de manter.
 
 ---
 
