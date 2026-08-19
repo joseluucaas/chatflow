@@ -1,243 +1,109 @@
 # 💬 ChatFlow
 
-Aplicação de comunicação em tempo real desenvolvida como projeto de estudo aprofundado em **Engenharia de software**, com foco em **TypeScript**, **Programação Orientada a Objetos**, **SOLID**, **Clean Code** e arquitetura escalável.
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+![Node.js](https://img.shields.io/badge/Node.js-333333?logo=node.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)
+![WebSocket](https://img.shields.io/badge/WebSocket-real--time-blue)
+![License](https://img.shields.io/badge/license-MIT-informational)
 
-> 🚧 Projeto em desenvolvimento ativo.  
-> Este README funciona como mapa do projeto e será atualizado conforme novas funcionalidades forem implementadas.
+Aplicação de chat em tempo real desenvolvida como estudo aprofundado de **Engenharia de Software**: TypeScript, POO, SOLID, Clean Code e arquitetura escalável, aplicados a um sistema de mensagens real com WebSocket.
+
+---
+
+## 📍 Status atual
+
+**Fase 2** — estruturando arquitetura em camadas (Controllers → Services → Repositories) e aplicando SOLID no domínio da aplicação. Fases seguintes: persistência com MySQL/Prisma, autenticação JWT e comunicação em tempo real via WebSocket.
+
+Veja o [roadmap completo](#-roadmap) para detalhes de cada fase.
 
 ---
 
 ## 📚 Índice
 
 - [Sobre o projeto](#-sobre-o-projeto)
-- [Conceitos](#-conceitos-aplicados)
+- [Conceitos aplicados](#-conceitos-aplicados)
 - [Stack utilizada](#-stack-utilizada)
 - [Arquitetura](#-arquitetura)
-- [Fluxo da aplicação](#-fluxo-da-aplicação)
-- [Modelagem do banco](#-modelagem-do-banco-de-dados)
+- [Fluxo de mensagem em tempo real](#-fluxo-de-mensagem-em-tempo-real)
+- [Modelagem do banco de dados](#-modelagem-do-banco-de-dados)
 - [Estrutura de pastas](#-estrutura-de-pastas)
 - [Segurança](#-segurança)
 - [Como executar](#-como-executar-o-projeto)
 - [API Documentation](#-api-documentation)
 - [Roadmap](#-roadmap)
+- [Convenções](#-convenções-e-padrões)
 - [Autor](#-autor)
 
 ---
 
 ## 📖 Sobre o projeto
 
-O **ChatFlow** é uma aplicação de conversação em tempo real onde usuários podem criar contas, autenticar-se e trocar mensagens instantaneamente.
+O **ChatFlow** é uma aplicação de conversação em tempo real onde usuários criam contas, se autenticam e trocam mensagens instantaneamente.
 
-O objetivo principal deste projeto não é apenas criar um chat funcional, mas construir uma aplicação seguindo padrões utilizados no mercado de desenvolvimento de software.
+O objetivo não é apenas ter um chat funcional, mas construir uma aplicação seguindo padrões de mercado — arquitetura em camadas, boas práticas de código e infraestrutura pronta para escalar.
 
 ---
 
 ## 🧠 Conceitos aplicados
 
-Durante o desenvolvimento do ChatFlow serão aplicados conceitos e práticas utilizadas no desenvolvimento de sistemas profissionais:
+<table>
+<tr><td><strong>Arquitetura</strong></td><td>Layered Architecture · Clean Architecture · DDD · Repository Pattern · Service Layer · Dependency Injection · Design Patterns</td></tr>
+<tr><td><strong>Qualidade de código</strong></td><td>SOLID · Clean Code · DTO · Programação Orientada a Objetos</td></tr>
+<tr><td><strong>Confiabilidade</strong></td><td>Validação de dados · Tratamento global de erros · Testes unitários e de integração</td></tr>
+<tr><td><strong>Segurança</strong></td><td>Autenticação e autorização · Boas práticas contra vulnerabilidades comuns</td></tr>
+<tr><td><strong>Operação</strong></td><td>Observabilidade · Cache · Escalabilidade horizontal · Performance</td></tr>
+<tr><td><strong>Processo</strong></td><td>Versionamento com Git · Conventional Commits · Documentação técnica (README + Swagger)</td></tr>
+</table>
 
-- **Arquitetura em camadas** — Separação de responsabilidades entre Controllers, Services, Repositories e Entities.
-
-- **Programação Orientada a Objetos (POO)** — Uso de classes, objetos, encapsulamento, abstração, herança e polimorfismo para organização do domínio da aplicação.
-
-- **Princípios SOLID** — Aplicação dos cinco princípios para criar um código mais flexível, testável e de fácil manutenção.
-
-- **Clean Code** — Desenvolvimento com foco em legibilidade, simplicidade e clareza.
-
-- **Clean Architecture** — Organização do sistema visando baixo acoplamento e independência das regras de negócio.
-
-- **Design Patterns** — Utilização de padrões de projeto para resolver problemas comuns de arquitetura e desenvolvimento.
-
-- **Domain-Driven Design (DDD)** — Modelagem do sistema baseada nas regras e conceitos do domínio da aplicação.
-
-- **Dependency Injection (DI)** — Gerenciamento de dependências para reduzir acoplamento entre componentes.
-
-- **Repository Pattern** — Abstração do acesso aos dados, isolando regras de negócio da camada de persistência.
-
-- **Service Layer Pattern** — Centralização das regras de negócio em serviços independentes.
-
-- **DTO (Data Transfer Object)** — Controle e organização dos dados que trafegam entre as camadas da aplicação.
-
-- **Validação de dados** — Garantia de integridade das informações recebidas pela API.
-
-- **Tratamento global de erros** — Padronização das respostas de erro e melhor experiência para consumidores da API.
-
-- **Autenticação e autorização** — Implementação de mecanismos seguros para controle de acesso.
-
-- **Segurança da aplicação** — Aplicação de boas práticas contra vulnerabilidades comuns.
-
-- **Testes automatizados**
-  - Criação de testes unitários e testes de integração para garantir confiabilidade.
-
-- **Versionamento de código** — Uso de Git seguindo boas práticas de organização e histórico de alterações.
-
-- **Documentação de software** — Criação de documentação técnica utilizando README e Swagger.
-
-- **Código limpo e sustentável** — Desenvolvimento pensando em manutenção, evolução e escalabilidade.
-
-- **Escalabilidade** — Preparação da aplicação para suportar crescimento de usuários e volume de dados.
-
-- **Observabilidade** — Planejamento de logs, monitoramento e rastreamento de erros.
-
-- **Performance** — Aplicação de técnicas para otimização de consultas, cache e processamento.
-
-- **Desenvolvimento orientado a boas práticas** — Construção do sistema seguindo padrões utilizados no mercado.
+---
 
 ## 🛠 Stack utilizada
 
-### Back-end
+| Categoria | Tecnologias |
+|---|---|
+| **Runtime / Linguagem** | Node.js, TypeScript |
+| **Framework HTTP** | Express 4 |
+| **Banco de dados** | MySQL + Prisma (ORM) |
+| **Tempo real** | WebSocket, Redis (cache e presença) |
+| **Autenticação** | JWT, bcrypt |
+| **Validação** | Zod |
+| **Infraestrutura** | Docker |
+| **Documentação de API** | Swagger |
+| **Qualidade** | ESLint, Prettier |
+| **Testes** | Jest, Supertest |
+| **Ferramentas** | Git, GitHub, VS Code, Postman |
 
-- [Node.js](https://nodejs.org/) — Ambiente de execução JavaScript no servidor.
+<details>
+<summary><strong>Front-end (planejado)</strong></summary>
 
-- [TypeScript](https://www.typescriptlang.org/) — Superset do JavaScript com tipagem estática, proporcionando maior segurança e organização do código.
+React · TypeScript · Tailwind CSS · Vite
 
-- [Express 4](https://expressjs.com/) — Framework utilizado para construção da API HTTP e gerenciamento das rotas da aplicação.
-
-- [MySQL](https://www.mysql.com/) — Banco de dados relacional utilizado para armazenamento das informações da aplicação.
-
-- [ORM](https://www.prisma.io/) — Camada de abstração para comunicação entre a aplicação e o banco de dados.
-
-- [WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) — Tecnologia utilizada para comunicação bidirecional em tempo real entre clientes e servidor.
-
-- [Redis](https://redis.io/) — Banco de dados em memória utilizado para cache, gerenciamento de presença dos usuários e recursos de tempo real.
-
-- [JSON Web Token (JWT)](https://jwt.io/) — Sistema de autenticação baseado em tokens para controle de acesso.
-
-- [bcrypt](https://www.npmjs.com/package/bcrypt) — Biblioteca utilizada para criação de hashes seguros de senha.
-
-- [Zod](https://zod.dev/) — Biblioteca utilizada para validação e tipagem dos dados recebidos pela aplicação.
-
-- [Docker](https://www.docker.com/) — Plataforma utilizada para criação de ambientes isolados e padronização da infraestrutura.
-
-- [Swagger](https://swagger.io/) — Ferramenta utilizada para documentação e testes dos endpoints da API.
-
----
-
-### Front-end *(planejado)*
-
-- [React](https://react.dev/) — Biblioteca utilizada para construção da interface da aplicação.
-
-- [TypeScript](https://www.typescriptlang.org/) — Utilizado também no frontend para garantir maior segurança e organização do código.
-
-- [Tailwind CSS](https://tailwindcss.com/) — Framework CSS utilizado para criação da interface de forma rápida e responsiva.
-
-- [Vite](https://vite.dev/) — Ferramenta utilizada para configuração e execução do ambiente frontend.
-
----
-
-### Qualidade de código
-
-- [ESLint](https://eslint.org/) — Análise estática do código para identificar problemas e manter padrões.
-
-- [Prettier](https://prettier.io/) — Formatação automática do código seguindo um padrão definido.
-
----
-
-### Testes automatizados
-
-- [Jest](https://jestjs.io/) — Framework utilizado para criação de testes automatizados.
-
-- [Supertest](https://www.npmjs.com/package/supertest) — Biblioteca utilizada para testar endpoints HTTP da API.
-
----
-
-### Ferramentas de desenvolvimento
-
-- [Git](https://git-scm.com/) — Controle de versão do projeto.
-
-- [GitHub](https://github.com/) — Hospedagem do repositório e gerenciamento do código.
-
-- [VS Code](https://code.visualstudio.com/) — Editor utilizado no desenvolvimento.
-- [Postman](https://www.postman.com/) — Ferramenta utilizada para realizar testes manuais dos endpoints da API, enviar requisições HTTP e validar respostas do backend.
-
+</details>
 
 ---
 
 ## 🏗 Arquitetura
 
-O projeto utiliza arquitetura baseada em camadas.
-
-Cada camada possui uma responsabilidade específica.
+Arquitetura em camadas, cada uma com responsabilidade única:
 
 ```mermaid
 flowchart TB
-
-Client["Cliente"]
-
-Routes["Routes"]
-
-Middleware["Middlewares"]
-
-Controller["Controllers"]
-
-Service["Services"]
-
-Repository["Repositories"]
-
-Database[("MySQL")]
-
-
-Client --> Routes
-
-Routes --> Middleware
-
-Middleware --> Controller
-
-Controller --> Service
-
-Service --> Repository
-
-Repository --> Database
+Client["Cliente"] --> Routes["Routes"]
+Routes --> Middleware["Middlewares"]
+Middleware --> Controller["Controllers"]
+Controller --> Service["Services"]
+Service --> Repository["Repositories"]
+Repository --> Database[("MySQL")]
 ```
 
----
-
-## Responsabilidade das camadas
-
-### Routes
-
-Responsável pelos endpoints da aplicação.
-
-Exemplo:
-
-```
-POST /login
-GET /messages
-```
-
----
-
-### Controllers
-
-Responsável por:
-
-- receber requisições;
-- chamar serviços;
-- retornar respostas.
-
----
-
-### Services
-
-Responsável pelas regras de negócio.
-
-Exemplo:
-
-- validar envio de mensagem;
-- verificar permissões;
-- processar operações.
-
----
-
-### Repository
-
-Responsável pelo acesso aos dados.
-
-Exemplo:
-
-- salvar mensagem;
-- buscar usuário;
-- consultar conversas.
+| Camada | Responsabilidade |
+|---|---|
+| **Routes** | Define os endpoints (`POST /login`, `GET /messages`) |
+| **Controllers** | Recebe requisições, chama serviços e retorna respostas |
+| **Services** | Regras de negócio (validações, permissões, processamento) |
+| **Repositories** | Acesso aos dados (salvar mensagem, buscar usuário, consultar conversas) |
 
 ---
 
@@ -245,22 +111,16 @@ Exemplo:
 
 ```mermaid
 sequenceDiagram
-
 participant User as Usuário
 participant WS as WebSocket
 participant Service as Message Service
 participant Database as MySQL
 
 User->>WS: Envia mensagem
-
 WS->>Service: Processa mensagem
-
 Service->>Database: Salva mensagem
-
 Database-->>Service: Confirma
-
 Service-->>WS: Retorna mensagem
-
 WS-->>User: Entrega mensagem
 ```
 
@@ -268,73 +128,40 @@ WS-->>User: Entrega mensagem
 
 ## 🗃 Modelagem do banco de dados
 
-Principais entidades:
-
-- User
-- Conversation
-- Participant
-- Message
-
+Entidades principais: `User`, `Conversation`, `Participant`, `Message`.
 
 ```mermaid
 erDiagram
-
 USER ||--o{ MESSAGE : sends
-
 USER ||--o{ PARTICIPANT : belongs
-
 CONVERSATION ||--o{ MESSAGE : contains
-
 CONVERSATION ||--o{ PARTICIPANT : contains
 
-
 USER {
-
-string id PK
-
-string name
-
-string email
-
-string passwordHash
-
+  string id PK
+  string name
+  string email
+  string passwordHash
 }
-
 
 MESSAGE {
-
-string id PK
-
-string content
-
-string userId FK
-
-string conversationId FK
-
-datetime createdAt
-
+  string id PK
+  string content
+  string userId FK
+  string conversationId FK
+  datetime createdAt
 }
-
 
 CONVERSATION {
-
-string id PK
-
-string type
-
-datetime createdAt
-
+  string id PK
+  string type
+  datetime createdAt
 }
 
-
 PARTICIPANT {
-
-string id PK
-
-string userId FK
-
-string conversationId FK
-
+  string id PK
+  string userId FK
+  string conversationId FK
 }
 ```
 
@@ -344,26 +171,17 @@ string conversationId FK
 
 ```
 backend
-│
 └── src
-    │
     ├── config
-    │
     ├── modules
-    │   │
     │   ├── auth
     │   ├── users
     │   ├── conversations
     │   └── messages
-    │
     ├── shared
-    │
     ├── middlewares
-    │
     ├── errors
-    │
     ├── routes
-    │
     └── websocket
 ```
 
@@ -371,39 +189,20 @@ backend
 
 ## 🔐 Segurança
 
-O projeto utilizará:
-
-- JWT para autenticação;
-- bcrypt para senhas;
-- validação de dados;
-- tratamento global de erros;
-- controle de permissões.
+- JWT para autenticação
+- bcrypt para hash de senhas
+- Validação de dados de entrada
+- Tratamento global de erros
+- Controle de permissões
 
 ---
 
 ## 🚀 Como executar o projeto
 
-### Clonar o projeto
-
 ```bash
-git clone projeto
-```
-
-## Entrar no backend
-
-```bash
-cd backend
-```
-
-## Instalar dependências
-
-```bash
+git clone <url-do-repositorio>
+cd chatflow/backend
 npm install
-```
-
-## Executar ambiente de desenvolvimento
-
-```bash
 npm run dev
 ```
 
@@ -411,9 +210,7 @@ npm run dev
 
 ## 📘 API Documentation
 
-A documentação da API será criada utilizando Swagger.
-
-Futuramente:
+Documentação via Swagger, disponível futuramente em:
 
 ```
 /api-docs
@@ -423,174 +220,129 @@ Futuramente:
 
 ## 🗺 Roadmap
 
-O desenvolvimento do ChatFlow será dividido em fases, seguindo uma evolução gradual de uma aplicação backend profissional.
+<details>
+<summary><strong>✅ Fase 1 — Configuração inicial</strong> (concluída)</summary>
 
-Cada etapa será marcada conforme for concluída.
+- [x] Estrutura inicial do projeto
+- [x] Node.js, TypeScript, ESM
+- [x] Express, ESLint, Prettier
+- [x] Git e documentação inicial
 
----
+</details>
 
-### ✅ Fase 1 — Configuração inicial do projeto
+<details>
+<summary><strong>🏗 Fase 2 — Arquitetura e organização do backend</strong> (em andamento)</summary>
 
-- [x] Criar estrutura inicial do projeto
-- [x] Configurar Node.js
-- [x] Configurar TypeScript
-- [x] Configurar ESM (`type: module`)
-- [x] Configurar Express
-- [x] Configurar ESLint
-- [x] Configurar Prettier
-- [x] Configurar Git e versionamento
-- [x] Criar documentação inicial do projeto (README)
+- [ ] Estrutura de módulos
+- [ ] Controllers, Services, Repositories, Entities
+- [ ] Programação Orientada a Objetos + SOLID
+- [ ] Tratamento global de erros
+- [ ] Padrão de respostas da API
+- [ ] Variáveis de ambiente
 
----
+</details>
 
-### 🏗 Fase 2 — Arquitetura e organização do Backend
+<details>
+<summary><strong>🗄 Fase 3 — Banco de dados e persistência</strong></summary>
 
-- [ ] Criar estrutura de módulos
-- [ ] Implementar arquitetura em camadas
-  - [ ] Controllers
-  - [ ] Services
-  - [ ] Repositories
-  - [ ] Entities
-- [ ] Aplicar Programação Orientada a Objetos
-- [ ] Aplicar princípios SOLID
-- [ ] Criar tratamento global de erros
-- [ ] Criar padrões de respostas da API
-- [ ] Configurar variáveis de ambiente
+- [ ] Configurar MySQL + ORM
+- [ ] Migrations e modelagem inicial
+- [ ] Entidades: User, Conversation, Participant, Message
+- [ ] Relacionamentos e repositories
 
----
+</details>
 
-### 🗄 Fase 3 — Banco de dados e persistência
+<details>
+<summary><strong>🔐 Fase 4 — Autenticação e usuários</strong></summary>
 
-- [ ] Configurar MySQL
-- [ ] Configurar ORM
-- [ ] Criar conexão com banco
-- [ ] Criar migrations
-- [ ] Criar modelagem inicial
+- [ ] Cadastro e login
+- [ ] Hash de senha (bcrypt) e JWT
+- [ ] Middleware de autenticação, refresh token, sessão
+- [ ] Perfil de usuário
 
-#### Entidades:
+</details>
 
-- [ ] User
-- [ ] Conversation
-- [ ] Participant
-- [ ] Message
+<details>
+<summary><strong>💬 Fase 5 — Sistema de conversas</strong></summary>
 
-- [ ] Criar relacionamentos entre entidades
-- [ ] Criar repositories para acesso aos dados
+- [ ] Criação de conversas privadas e participantes
+- [ ] Listagem de conversas do usuário
+- [ ] Gerenciamento de membros
 
----
+</details>
 
-### 🔐 Fase 4 — Sistema de autenticação e usuários
+<details>
+<summary><strong>⚡ Fase 6 — Comunicação em tempo real</strong></summary>
 
-- [ ] Criar cadastro de usuários
-- [ ] Implementar hash de senha com bcrypt
-- [ ] Criar login
-- [ ] Implementar autenticação JWT
-- [ ] Criar middleware de autenticação
-- [ ] Criar refresh token
-- [ ] Criar gerenciamento de sessão
-- [ ] Criar perfil de usuário
+- [ ] Servidor WebSocket e eventos de mensagens
+- [ ] Envio/recebimento instantâneo
+- [ ] Status online/offline e "digitando..."
+- [ ] Notificações em tempo real
 
----
+</details>
 
-### 💬 Fase 5 — Sistema de conversas
+<details>
+<summary><strong>🚀 Fase 7 — Performance e escalabilidade</strong></summary>
 
-- [ ] Criar criação de conversas
-- [ ] Implementar conversas privadas
-- [ ] Implementar participantes
-- [ ] Listar conversas do usuário
-- [ ] Gerenciar membros da conversa
+- [ ] Redis para cache e presença
+- [ ] Filas de processamento
+- [ ] Otimização de consultas
+- [ ] Suporte a múltiplas instâncias
 
----
+</details>
 
-### ⚡ Fase 6 — Comunicação em tempo real
+<details>
+<summary><strong>🧪 Fase 8 — Testes automatizados</strong></summary>
 
-- [ ] Configurar WebSocket
-- [ ] Criar servidor de comunicação em tempo real
-- [ ] Criar eventos de mensagens
-- [ ] Enviar mensagens instantaneamente
-- [ ] Receber mensagens em tempo real
-- [ ] Criar status online/offline
-- [ ] Criar indicador de usuário digitando
-- [ ] Criar notificações em tempo real
+- [ ] Testes unitários e de integração
+- [ ] Testes de autenticação e mensagens
 
----
+</details>
 
-### 🚀 Fase 7 — Performance e escalabilidade
+<details>
+<summary><strong>📚 Fase 9 — Documentação da API</strong></summary>
 
-- [ ] Implementar Redis
-- [ ] Criar sistema de cache
-- [ ] Gerenciar presença dos usuários
-- [ ] Criar filas de processamento
-- [ ] Melhorar performance das consultas
-- [ ] Preparar aplicação para múltiplas instâncias
+- [ ] Swagger configurado e endpoints documentados
+- [ ] Exemplos de requisições
 
----
+</details>
 
-### 🧪 Fase 8 — Testes automatizados
+<details>
+<summary><strong>🐳 Fase 10 — Infraestrutura e Deploy</strong></summary>
 
-- [ ] Configurar ambiente de testes
-- [ ] Testes unitários
-- [ ] Testes de integração
-- [ ] Testes de autenticação
-- [ ] Testes de mensagens
-- [ ] Testes dos serviços principais
+- [ ] Docker + Docker Compose
+- [ ] Banco em produção e variáveis de ambiente
+- [ ] Deploy backend e frontend
 
----
+</details>
 
-### 📚 Fase 9 — Documentação da API
+<details>
+<summary><strong>🎨 Fase 11 — Front-end</strong></summary>
 
-- [ ] Configurar Swagger
-- [ ] Documentar endpoints
-- [ ] Documentar autenticação
-- [ ] Documentar respostas da API
-- [ ] Criar exemplos de requisições
+- [ ] React + Tailwind CSS
+- [ ] Telas de login, cadastro e conversas
+- [ ] Integração com API e WebSocket
+- [ ] Notificações visuais
 
----
-
-### 🐳 Fase 10 — Infraestrutura e Deploy
-
-- [ ] Configurar Docker
-- [ ] Criar Docker Compose
-- [ ] Containerizar aplicação
-- [ ] Configurar banco em produção
-- [ ] Configurar variáveis de ambiente
-- [ ] Deploy do backend
-- [ ] Deploy do frontend
-
----
-
-### 🎨 Fase 11 — Front-end (futuro)
-
-- [ ] Criar aplicação React
-- [ ] Configurar Tailwind CSS
-- [ ] Criar tela de login
-- [ ] Criar cadastro de usuário
-- [ ] Criar interface de conversas
-- [ ] Integrar API
-- [ ] Integrar WebSocket
-- [ ] Criar notificações visuais
+</details>
 
 ---
 
 ## 📐 Convenções e padrões
 
-### Commits
-
-Este projeto segue a convenção [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/), facilitando a leitura do histórico e a identificação do tipo de cada mudança:
+Commits seguem [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/):
 
 | Prefixo | Uso |
-|---------|-----|
+|---|---|
 | `feat:` | Nova funcionalidade |
 | `fix:` | Correção de bug |
-| `refactor:` | Reorganização de código sem mudar comportamento |
+| `refactor:` | Reorganização sem mudar comportamento |
 | `docs:` | Mudanças na documentação |
-| `chore:` | Configuração, tarefas de manutenção |
+| `chore:` | Configuração e manutenção |
 | `test:` | Adição ou ajuste de testes |
 
 ---
 
 ## 👤 Autor
 
-Desenvolvido por **José Lucas**.
-
-Projeto criado com objetivo de aprendizado e evolução profissional na área de desenvolvimento de software.
+Desenvolvido por **José Lucas** — projeto de aprendizado e evolução profissional em desenvolvimento de software.
