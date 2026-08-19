@@ -7,7 +7,7 @@ Aplicação de comunicação em tempo real desenvolvida como projeto de estudo a
 
 ---
 
-# 📚 Índice
+## 📚 Índice
 
 - [Sobre o projeto](#-sobre-o-projeto)
 - [Objetivos](#-objetivos-do-projeto)
@@ -27,11 +27,11 @@ Aplicação de comunicação em tempo real desenvolvida como projeto de estudo a
 
 ---
 
-# 📖 Sobre o projeto
+## 📖 Sobre o projeto
 
 O **ChatFlow** é uma aplicação de conversação em tempo real onde usuários podem criar contas, autenticar-se e trocar mensagens instantaneamente.
 
-O objetivo principal deste projeto não é apenas criar um chat funcional, mas construir uma aplicação seguindo padrões utilizados no mercado de desenvolvimento backend.
+O objetivo principal deste projeto não é apenas criar um chat funcional, mas construir uma aplicação seguindo padrões utilizados no mercado de desenvolvimento de Software.
 
 ---
 
@@ -112,102 +112,75 @@ Durante o desenvolvimento do ChatFlow serão aplicados conceitos e práticas uti
 
 ## Back-end
 
-- [Node.js](https://nodejs.org/)  
-  - Ambiente de execução JavaScript no servidor.
+- [Node.js](https://nodejs.org/) — Ambiente de execução JavaScript no servidor.
 
-- [TypeScript](https://www.typescriptlang.org/)  
-  - Superset do JavaScript com tipagem estática, proporcionando maior segurança e organização do código.
+- [TypeScript](https://www.typescriptlang.org/) — Superset do JavaScript com tipagem estática, proporcionando maior segurança e organização do código.
 
-- [Express 4](https://expressjs.com/)  
-  - Framework utilizado para construção da API HTTP e gerenciamento das rotas da aplicação.
+- [Express 4](https://expressjs.com/) — Framework utilizado para construção da API HTTP e gerenciamento das rotas da aplicação.
 
-- [MySQL](https://www.mysql.com/)  
-  - Banco de dados relacional utilizado para armazenamento das informações da aplicação.
+- [MySQL](https://www.mysql.com/) — Banco de dados relacional utilizado para armazenamento das informações da aplicação.
 
-- [ORM](https://www.prisma.io/)  
-  - Camada de abstração para comunicação entre a aplicação e o banco de dados.
+- [ORM](https://www.prisma.io/) — Camada de abstração para comunicação entre a aplicação e o banco de dados.
 
-- [WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)  
-  - Tecnologia utilizada para comunicação bidirecional em tempo real entre clientes e servidor.
+- [WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) — Tecnologia utilizada para comunicação bidirecional em tempo real entre clientes e servidor.
 
-- [Redis](https://redis.io/)  
-  - Banco de dados em memória utilizado para cache, gerenciamento de presença dos usuários e recursos de tempo real.
+- [Redis](https://redis.io/) — Banco de dados em memória utilizado para cache, gerenciamento de presença dos usuários e recursos de tempo real.
 
-- [JSON Web Token (JWT)](https://jwt.io/)  
-  - Sistema de autenticação baseado em tokens para controle de acesso.
+- [JSON Web Token (JWT)](https://jwt.io/) — Sistema de autenticação baseado em tokens para controle de acesso.
 
-- [bcrypt](https://www.npmjs.com/package/bcrypt)  
-  - Biblioteca utilizada para criação de hashes seguros de senha.
+- [bcrypt](https://www.npmjs.com/package/bcrypt) — Biblioteca utilizada para criação de hashes seguros de senha.
 
-- [Zod](https://zod.dev/)  
-  - Biblioteca utilizada para validação e tipagem dos dados recebidos pela aplicação.
+- [Zod](https://zod.dev/) — Biblioteca utilizada para validação e tipagem dos dados recebidos pela aplicação.
 
-- [Docker](https://www.docker.com/)  
-  - Plataforma utilizada para criação de ambientes isolados e padronização da infraestrutura.
+- [Docker](https://www.docker.com/) — Plataforma utilizada para criação de ambientes isolados e padronização da infraestrutura.
 
-- [Swagger](https://swagger.io/)  
-  - Ferramenta utilizada para documentação e testes dos endpoints da API.
+- [Swagger](https://swagger.io/) — Ferramenta utilizada para documentação e testes dos endpoints da API.
 
 ---
 
 ## Front-end *(planejado)*
 
-- [React](https://react.dev/)  
-  - Biblioteca utilizada para construção da interface da aplicação.
+- [React](https://react.dev/) — Biblioteca utilizada para construção da interface da aplicação.
 
-- [TypeScript](https://www.typescriptlang.org/)  
-  - Utilizado também no frontend para garantir maior segurança e organização do código.
+- [TypeScript](https://www.typescriptlang.org/) — Utilizado também no frontend para garantir maior segurança e organização do código.
 
-- [Tailwind CSS](https://tailwindcss.com/)  
-  - Framework CSS utilizado para criação da interface de forma rápida e responsiva.
+- [Tailwind CSS](https://tailwindcss.com/) — Framework CSS utilizado para criação da interface de forma rápida e responsiva.
 
-- [Vite](https://vite.dev/)  
-  - Ferramenta utilizada para configuração e execução do ambiente frontend.
+- [Vite](https://vite.dev/) — Ferramenta utilizada para configuração e execução do ambiente frontend.
 
 ---
 
 ## Qualidade de código
 
-- [ESLint](https://eslint.org/)  
-  - Análise estática do código para identificar problemas e manter padrões.
+- [ESLint](https://eslint.org/) — Análise estática do código para identificar problemas e manter padrões.
 
-- [Prettier](https://prettier.io/)  
-  - Formatação automática do código seguindo um padrão definido.
+- [Prettier](https://prettier.io/) — Formatação automática do código seguindo um padrão definido.
 
-- **Clean Code**
-  - Práticas para criação de código legível, simples e sustentável.
+- **Clean Code** — Práticas para criação de código legível, simples e sustentável.
 
-- **SOLID**
-  - Princípios de engenharia de software para criar código flexível e de fácil manutenção.
+- **SOLID** — Princípios de engenharia de software para criar código flexível e de fácil manutenção.
 
-- **Programação Orientada a Objetos (POO)**
-  - Paradigma utilizado para organização das entidades e regras do domínio.
+- **Programação Orientada a Objetos (POO)** — Paradigma utilizado para organização das entidades e regras do domínio.
 
-- **Clean Architecture**
-  - Organização estrutural visando baixo acoplamento e separação de responsabilidades.
+- **Clean Architecture** — Organização estrutural visando baixo acoplamento e separação de responsabilidades.
 
 ---
 
 ## Testes automatizados
 
-- [Jest](https://jestjs.io/)  
-  - Framework utilizado para criação de testes automatizados.
+- [Jest](https://jestjs.io/) — Framework utilizado para criação de testes automatizados.
 
-- [Supertest](https://www.npmjs.com/package/supertest)  
-  - Biblioteca utilizada para testar endpoints HTTP da API.
+- [Supertest](https://www.npmjs.com/package/supertest) — Biblioteca utilizada para testar endpoints HTTP da API.
 
 ---
 
 ## Ferramentas de desenvolvimento
 
-- [Git](https://git-scm.com/)  
-  - Controle de versão do projeto.
+- [Git](https://git-scm.com/) — Controle de versão do projeto.
 
-- [GitHub](https://github.com/)  
-  - Hospedagem do repositório e gerenciamento do código.
+- [GitHub](https://github.com/) — Hospedagem do repositório e gerenciamento do código.
 
-- [VS Code](https://code.visualstudio.com/)  
-  - Editor utilizado no desenvolvimento.
+- [VS Code](https://code.visualstudio.com/) — Editor utilizado no desenvolvimento.
 
 # 🏗 Arquitetura
 
