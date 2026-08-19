@@ -150,7 +150,7 @@ Durante o desenvolvimento do ChatFlow serão aplicados conceitos e práticas uti
 
 ---
 
-## Qualidade de código
+**Qualidade de código**
 
 - [ESLint](https://eslint.org/) — Análise estática do código para identificar problemas e manter padrões.
 
@@ -166,7 +166,7 @@ Durante o desenvolvimento do ChatFlow serão aplicados conceitos e práticas uti
 
 ---
 
-## Testes automatizados
+**Testes automatizados**
 
 - [Jest](https://jestjs.io/) — Framework utilizado para criação de testes automatizados.
 
@@ -174,7 +174,7 @@ Durante o desenvolvimento do ChatFlow serão aplicados conceitos e práticas uti
 
 ---
 
-## Ferramentas de desenvolvimento
+**Ferramentas de desenvolvimento**
 
 - [Git](https://git-scm.com/) — Controle de versão do projeto.
 
@@ -182,7 +182,9 @@ Durante o desenvolvimento do ChatFlow serão aplicados conceitos e práticas uti
 
 - [VS Code](https://code.visualstudio.com/) — Editor utilizado no desenvolvimento.
 
-# 🏗 Arquitetura
+---
+
+## 🏗 Arquitetura
 
 O projeto utiliza arquitetura baseada em camadas.
 
@@ -270,7 +272,7 @@ Exemplo:
 
 ---
 
-# 🔄 Fluxo de mensagem em tempo real
+## 🔄 Fluxo de mensagem em tempo real
 
 ```mermaid
 sequenceDiagram
@@ -295,7 +297,7 @@ WS-->>User: Entrega mensagem
 
 ---
 
-# 🗃 Modelagem do banco de dados
+## 🗃 Modelagem do banco de dados
 
 Principais entidades:
 
@@ -369,7 +371,7 @@ string conversationId FK
 
 ---
 
-# 📂 Estrutura de pastas
+## 📂 Estrutura de pastas
 
 ```
 backend
@@ -398,9 +400,9 @@ backend
 
 ---
 
-# 📦 Módulos do sistema
+## 📦 Módulos do sistema
 
-## Autenticação
+### Autenticação
 
 - [ ] Cadastro de usuário
 - [ ] Login
@@ -409,21 +411,21 @@ backend
 - [ ] Middleware de autenticação
 
 
-## Usuários
+### Usuários
 
 - [ ] Perfil
 - [ ] Atualização de dados
 - [ ] Status online
 
 
-## Conversas
+### Conversas
 
 - [ ] Criar conversa
 - [ ] Conversa privada
 - [ ] Participantes
 
 
-## Mensagens
+### Mensagens
 
 - [ ] Enviar mensagem
 - [ ] Histórico
@@ -431,7 +433,7 @@ backend
 - [ ] Eventos em tempo real
 
 
-## WebSocket
+### WebSocket
 
 - [ ] Conexão em tempo real
 - [ ] Eventos
@@ -440,7 +442,7 @@ backend
 
 ---
 
-# 🔐 Segurança
+## 🔐 Segurança
 
 O projeto utilizará:
 
@@ -452,9 +454,9 @@ O projeto utilizará:
 
 ---
 
-# 🚀 Como executar o projeto
+## 🚀 Como executar o projeto
 
-## Clonar o projeto
+### Clonar o projeto
 
 ```bash
 git clone projeto
@@ -480,7 +482,7 @@ npm run dev
 
 ---
 
-# 📘 API Documentation
+## 📘 API Documentation
 
 A documentação da API será criada utilizando Swagger.
 
@@ -492,9 +494,9 @@ Futuramente:
 
 ---
 
-# 🧠 Padrões utilizados
+## 🧠 Padrões utilizados
 
-## SOLID
+### SOLID
 
 Aplicação dos cinco princípios:
 
@@ -505,7 +507,7 @@ Aplicação dos cinco princípios:
 - Dependency Inversion Principle.
 
 
-## Clean Code
+### Clean Code
 
 Práticas utilizadas:
 
@@ -516,33 +518,33 @@ Práticas utilizadas:
 
 ---
 
-# 💡 Decisões técnicas
+## 💡 Decisões técnicas
 
-## Por que TypeScript?
+### Por que TypeScript?
 
 Porque aumenta a segurança do código através da tipagem estática.
 
 ---
 
-## Por que Express?
+### Por que Express?
 
 Porque permite entender profundamente o funcionamento de APIs HTTP.
 
 ---
 
-## Por que MySQL?
+### Por que MySQL?
 
 Porque é um banco relacional amplamente utilizado no mercado.
 
 ---
 
-## Por que Programação Orientada a Objetos?
+### Por que Programação Orientada a Objetos?
 
 Para organizar o domínio da aplicação através de objetos e responsabilidades bem definidas.
 
 ---
 
-## Por que SOLID?
+### Por que SOLID?
 
 Para criar um código:
 
@@ -560,7 +562,7 @@ Cada etapa será marcada conforme for concluída.
 
 ---
 
-## ✅ Fase 1 — Configuração inicial do projeto
+### ✅ Fase 1 — Configuração inicial do projeto
 
 - [x] Criar estrutura inicial do projeto
 - [x] Configurar Node.js
@@ -574,7 +576,7 @@ Cada etapa será marcada conforme for concluída.
 
 ---
 
-## 🏗 Fase 2 — Arquitetura e organização do Backend
+### 🏗 Fase 2 — Arquitetura e organização do Backend
 
 - [ ] Criar estrutura de módulos
 - [ ] Implementar arquitetura em camadas
@@ -590,7 +592,7 @@ Cada etapa será marcada conforme for concluída.
 
 ---
 
-## 🗄 Fase 3 — Banco de dados e persistência
+### 🗄 Fase 3 — Banco de dados e persistência
 
 - [ ] Configurar MySQL
 - [ ] Configurar ORM
@@ -598,7 +600,7 @@ Cada etapa será marcada conforme for concluída.
 - [ ] Criar migrations
 - [ ] Criar modelagem inicial
 
-### Entidades:
+#### Entidades:
 
 - [ ] User
 - [ ] Conversation
@@ -610,7 +612,7 @@ Cada etapa será marcada conforme for concluída.
 
 ---
 
-## 🔐 Fase 4 — Sistema de autenticação e usuários
+### 🔐 Fase 4 — Sistema de autenticação e usuários
 
 - [ ] Criar cadastro de usuários
 - [ ] Implementar hash de senha com bcrypt
@@ -623,7 +625,7 @@ Cada etapa será marcada conforme for concluída.
 
 ---
 
-## 💬 Fase 5 — Sistema de conversas
+### 💬 Fase 5 — Sistema de conversas
 
 - [ ] Criar criação de conversas
 - [ ] Implementar conversas privadas
@@ -633,7 +635,7 @@ Cada etapa será marcada conforme for concluída.
 
 ---
 
-## ⚡ Fase 6 — Comunicação em tempo real
+### ⚡ Fase 6 — Comunicação em tempo real
 
 - [ ] Configurar WebSocket
 - [ ] Criar servidor de comunicação em tempo real
@@ -646,7 +648,7 @@ Cada etapa será marcada conforme for concluída.
 
 ---
 
-## 🚀 Fase 7 — Performance e escalabilidade
+### 🚀 Fase 7 — Performance e escalabilidade
 
 - [ ] Implementar Redis
 - [ ] Criar sistema de cache
@@ -657,7 +659,7 @@ Cada etapa será marcada conforme for concluída.
 
 ---
 
-## 🧪 Fase 8 — Testes automatizados
+### 🧪 Fase 8 — Testes automatizados
 
 - [ ] Configurar ambiente de testes
 - [ ] Testes unitários
@@ -668,7 +670,7 @@ Cada etapa será marcada conforme for concluída.
 
 ---
 
-## 📚 Fase 9 — Documentação da API
+### 📚 Fase 9 — Documentação da API
 
 - [ ] Configurar Swagger
 - [ ] Documentar endpoints
@@ -678,7 +680,7 @@ Cada etapa será marcada conforme for concluída.
 
 ---
 
-## 🐳 Fase 10 — Infraestrutura e Deploy
+### 🐳 Fase 10 — Infraestrutura e Deploy
 
 - [ ] Configurar Docker
 - [ ] Criar Docker Compose
@@ -690,7 +692,7 @@ Cada etapa será marcada conforme for concluída.
 
 ---
 
-## 🎨 Fase 11 — Front-end (futuro)
+### 🎨 Fase 11 — Front-end (futuro)
 
 - [ ] Criar aplicação React
 - [ ] Configurar Tailwind CSS
@@ -720,7 +722,7 @@ Este projeto segue a convenção [Conventional Commits](https://www.conventional
 
 ---
 
-# 👨‍💻 Autor
+## 👤 Autor
 
 Desenvolvido por **José Lucas**.
 
