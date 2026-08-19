@@ -131,14 +131,6 @@ Durante o desenvolvimento do ChatFlow serão aplicados conceitos e práticas uti
 
 - [Prettier](https://prettier.io/) — Formatação automática do código seguindo um padrão definido.
 
-- **Clean Code** — Práticas para criação de código legível, simples e sustentável.
-
-- **SOLID** — Princípios de engenharia de software para criar código flexível e de fácil manutenção.
-
-- **Programação Orientada a Objetos (POO)** — Paradigma utilizado para organização das entidades e regras do domínio.
-
-- **Clean Architecture** — Organização estrutural visando baixo acoplamento e separação de responsabilidades.
-
 ---
 
 ### Testes automatizados
@@ -156,6 +148,8 @@ Durante o desenvolvimento do ChatFlow serão aplicados conceitos e práticas uti
 - [GitHub](https://github.com/) — Hospedagem do repositório e gerenciamento do código.
 
 - [VS Code](https://code.visualstudio.com/) — Editor utilizado no desenvolvimento.
+- [Postman](https://www.postman.com/) — Ferramenta utilizada para realizar testes manuais dos endpoints da API, enviar requisições HTTP e validar respostas do backend.
+
 
 ---
 
