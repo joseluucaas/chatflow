@@ -1,6 +1,6 @@
 # 💬 ChatFlow
 
-Aplicação de comunicação em tempo real desenvolvida como projeto de estudo aprofundado em **Back-end**, com foco em **TypeScript**, **Programação Orientada a Objetos**, **SOLID**, **Clean Code** e arquitetura escalável.
+Aplicação de comunicação em tempo real desenvolvida como projeto de estudo aprofundado em **Engenharia de software**, com foco em **TypeScript**, **Programação Orientada a Objetos**, **SOLID**, **Clean Code** e arquitetura escalável.
 
 > 🚧 Projeto em desenvolvimento ativo.  
 > Este README funciona como mapa do projeto e será atualizado conforme novas funcionalidades forem implementadas.
@@ -16,7 +16,6 @@ Aplicação de comunicação em tempo real desenvolvida como projeto de estudo a
 - [Fluxo da aplicação](#-fluxo-da-aplicação)
 - [Modelagem do banco](#-modelagem-do-banco-de-dados)
 - [Estrutura de pastas](#-estrutura-de-pastas)
-- [Módulos do sistema](#-módulos-do-sistema)
 - [Segurança](#-segurança)
 - [Como executar](#-como-executar-o-projeto)
 - [API Documentation](#-api-documentation)
@@ -31,7 +30,7 @@ Aplicação de comunicação em tempo real desenvolvida como projeto de estudo a
 
 O **ChatFlow** é uma aplicação de conversação em tempo real onde usuários podem criar contas, autenticar-se e trocar mensagens instantaneamente.
 
-O objetivo principal deste projeto não é apenas criar um chat funcional, mas construir uma aplicação seguindo padrões utilizados no mercado de desenvolvimento de Software.
+O objetivo principal deste projeto não é apenas criar um chat funcional, mas construir uma aplicação seguindo padrões utilizados no mercado de desenvolvimento de software.
 
 ---
 
@@ -684,4 +683,4 @@ Este projeto segue a convenção [Conventional Commits](https://www.conventional
 
 Desenvolvido por **José Lucas**.
 
-Projeto criado com objetivo de aprendizado e evolução profissional na área de desenvolvimento backend.
+Projeto criado com objetivo de aprendizado e evolução profissional na área de desenvolvimento de software.
