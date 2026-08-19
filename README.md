@@ -33,6 +33,8 @@ O **ChatFlow** é uma aplicação de conversação em tempo real onde usuários 
 
 O objetivo principal deste projeto não é apenas criar um chat funcional, mas construir uma aplicação seguindo padrões utilizados no mercado de desenvolvimento backend.
 
+---
+
 ## 🧠 Conceitos aplicados
 
 Durante o desenvolvimento do ChatFlow serão aplicados conceitos e práticas utilizadas no desenvolvimento de sistemas profissionais:
