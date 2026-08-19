@@ -110,7 +110,7 @@ Durante o desenvolvimento do ChatFlow serão aplicados conceitos e práticas uti
 
 ## 🛠 Stack utilizada
 
-**Back-end**
+### Back-end
 
 - [Node.js](https://nodejs.org/) — Ambiente de execução JavaScript no servidor.
 
@@ -138,7 +138,7 @@ Durante o desenvolvimento do ChatFlow serão aplicados conceitos e práticas uti
 
 ---
 
-**Front-end** *(planejado)*
+### Front-end *(planejado)*
 
 - [React](https://react.dev/) — Biblioteca utilizada para construção da interface da aplicação.
 
@@ -150,7 +150,7 @@ Durante o desenvolvimento do ChatFlow serão aplicados conceitos e práticas uti
 
 ---
 
-**Qualidade de código**
+### Qualidade de código
 
 - [ESLint](https://eslint.org/) — Análise estática do código para identificar problemas e manter padrões.
 
@@ -166,7 +166,7 @@ Durante o desenvolvimento do ChatFlow serão aplicados conceitos e práticas uti
 
 ---
 
-**Testes automatizados**
+### Testes automatizados
 
 - [Jest](https://jestjs.io/) — Framework utilizado para criação de testes automatizados.
 
@@ -174,7 +174,7 @@ Durante o desenvolvimento do ChatFlow serão aplicados conceitos e práticas uti
 
 ---
 
-**Ferramentas de desenvolvimento**
+### Ferramentas de desenvolvimento
 
 - [Git](https://git-scm.com/) — Controle de versão do projeto.
 
@@ -397,48 +397,6 @@ backend
     │
     └── websocket
 ```
-
----
-
-## 📦 Módulos do sistema
-
-### Autenticação
-
-- [ ] Cadastro de usuário
-- [ ] Login
-- [ ] JWT
-- [ ] Refresh Token
-- [ ] Middleware de autenticação
-
-
-### Usuários
-
-- [ ] Perfil
-- [ ] Atualização de dados
-- [ ] Status online
-
-
-### Conversas
-
-- [ ] Criar conversa
-- [ ] Conversa privada
-- [ ] Participantes
-
-
-### Mensagens
-
-- [ ] Enviar mensagem
-- [ ] Histórico
-- [ ] Paginação
-- [ ] Eventos em tempo real
-
-
-### WebSocket
-
-- [ ] Conexão em tempo real
-- [ ] Eventos
-- [ ] Notificações
-- [ ] Controle de usuários online
 
 ---
 
