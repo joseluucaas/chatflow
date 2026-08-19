@@ -8,15 +8,7 @@
 ![WebSocket](https://img.shields.io/badge/WebSocket-real--time-blue)
 ![License](https://img.shields.io/badge/license-MIT-informational)
 
-Aplicação de chat em tempo real desenvolvida como estudo aprofundado de **Engenharia de Software**: TypeScript, POO, SOLID, Clean Code e arquitetura escalável, aplicados a um sistema de mensagens real com WebSocket.
-
----
-
-## 📍 Status atual
-
-**Fase 2** — estruturando arquitetura em camadas (Controllers → Services → Repositories) e aplicando SOLID no domínio da aplicação. Fases seguintes: persistência com MySQL/Prisma, autenticação JWT e comunicação em tempo real via WebSocket.
-
-Veja o [roadmap completo](#-roadmap) para detalhes de cada fase.
+Aplicação de chat em tempo real desenvolvida como estudo aprofundado de **Engenharia de Software**. TypeScript, POO, SOLID, Clean Code e arquitetura escalável, aplicados a um sistema de mensagens em tempo real com WebSocket.
 
 ---
 
@@ -42,7 +34,7 @@ Veja o [roadmap completo](#-roadmap) para detalhes de cada fase.
 
 O **ChatFlow** é uma aplicação de conversação em tempo real onde usuários criam contas, se autenticam e trocam mensagens instantaneamente.
 
-O objetivo não é apenas ter um chat funcional, mas construir uma aplicação seguindo padrões de mercado — arquitetura em camadas, boas práticas de código e infraestrutura pronta para escalar.
+O objetivo não é apenas ter um chat funcional, mas construir uma aplicação seguindo padrões de mercado, arquitetura em camadas, boas práticas de código e infraestrutura pronta para escalar.
 
 ---
 
