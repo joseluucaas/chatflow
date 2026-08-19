@@ -10,7 +10,7 @@ Aplicação de comunicação em tempo real desenvolvida como projeto de estudo a
 ## 📚 Índice
 
 - [Sobre o projeto](#-sobre-o-projeto)
-- [Objetivos](#-objetivos-do-projeto)
+- [Conceitos](#-conceitos-aplicados)
 - [Stack utilizada](#-stack-utilizada)
 - [Arquitetura](#-arquitetura)
 - [Fluxo da aplicação](#-fluxo-da-aplicação)
