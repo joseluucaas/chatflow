@@ -1,7 +1,7 @@
 # 💬 ChatFlow
 
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
-![Node.js](https://img.shields.io/badge/Node.js-333333?logo=node.js&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)
